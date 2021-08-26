@@ -1,0 +1,24 @@
+/* Botones */
+
+$celeste: #00aff4;
+$gris-claro: #ebebeb;
+$gris: #5e5e5e;
+$gris2: #414141;
+$font: 'Roboto', sans-serif;
+
+.btn:hover {
+    background-color: $celeste;
+}
+
+a:hover {
+    color: $gris-claro;
+}
+
+.btn-outline-info {
+    color: $celeste;
+    border-color: $celeste;
+}
+
+.dropdown-item:hover {
+    color: $celeste;
+}

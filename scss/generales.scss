@@ -1,0 +1,191 @@
+/* Generales */
+
+$celeste: #00aff4;
+$gris-claro: #ebebeb;
+$gris: #5e5e5e;
+$gris2: #414141;
+$font: 'Roboto', sans-serif;
+
+* {
+    font-family: $font;
+    margin: 0px;
+    padding: 0px;
+    font-weight: 200;
+    text-decoration: none;
+}
+
+body {
+    width: 980px;
+    margin: auto;
+}
+
+a {
+    color: $celeste;
+}
+
+p {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+th {
+    font-size: 30px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: $gris;
+}
+
+.nav-link {
+    padding: 0 0 0 0;
+}
+
+.intro {
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center -10px;
+    height: 415px;
+    margin-top: 0px;
+}
+
+.texto-intro {
+    width: 600px;
+    font-size: 44px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: $gris;
+    padding: 100px 0px 30px 50px;
+
+span {
+    color: $celeste;
+    font-weight: bold;    
+}
+}
+
+.intro-acerca-de {
+    width: 100%;
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+    height: 250px;
+    padding: 62px 50px;
+    margin-top: 0px;
+}
+
+.intro-cursos {
+    width: 100%;
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+    height: 250px;
+    padding: 62px 50px;
+    margin-top: 0px;
+}
+
+.intro-social {
+    width: 100%;
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+    height: 250px;
+    padding: 62px 50px;
+    margin-top: 0px;
+}
+
+.intro-mk {
+    width: 100%;
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+    height: 250px;
+    padding: 62px 50px;
+    margin-top: 0px;
+}
+
+.intro-google {
+    width: 100%;
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+    height: 250px;
+    padding: 62px 50px;
+    margin-top: 0px;
+}
+
+.intro-fb {
+    width: 100%;
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+    height: 250px;
+    padding: 62px 50px;
+    margin-top: 0px;
+}
+
+.intro-contacto {
+    width: 100%;
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+    height: 250px;
+    padding: 62px 50px;
+    margin-top: 0px;
+}
+
+.intro-blog {
+    width: 100%;
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+    height: 250px;
+    padding: 62px 50px;
+    margin-top: 0px;
+}
+
+.texto-acerca-de {
+    width: 700px;
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: $gris;
+    padding: 30px 0px 30px 0px;
+}
+
+.info-gaston {
+    padding: 50px 0px 30px 0px;
+    overflow: hidden;
+
+    p {
+        font-size: 20px;
+        line-height: 1.5;
+        color: $gris2;
+    }
+}
+
+.texto-contacto {
+    width: 700px;
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 400;
+    color: $gris;
+    padding: 30px 0px 30px 0px;
+}
+
+.blog1 {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: stretch;
+}
+
+.card {
+    margin: 1em;
+}
+
+.estilo-formulario {
+    margin-left: 250px;
+}

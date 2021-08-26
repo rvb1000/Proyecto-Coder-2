@@ -1,5 +1,6 @@
+/* Generales */
 * {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0px;
   padding: 0px;
   font-weight: 200;
@@ -9,8 +10,8 @@ body {
   width: 980px;
   margin: auto; }
 
-img {
-  vertical-align: middle; }
+a {
+  color: #00aff4; }
 
 p {
   margin-block-start: 1em;
@@ -24,34 +25,11 @@ th {
   font-weight: 400;
   color: #5e5e5e; }
 
-.navbar-brand img {
-  width: 230px; }
-
-.d-flex img {
-  padding: 0px 5px; }
-
-a {
-  color: #00aff4; }
-
-.btn:hover {
-  background-color: #00aff4; }
-
-a:hover {
-  color: white; }
-
-.btn-outline-info {
-  color: #00aff4;
-  border-color: #00aff4; }
-
-.dropdown-item:hover {
-  color: #00aff4; }
-
 .nav-link {
   padding: 0 0 0 0; }
 
 .intro {
   width: 100%;
-  background-image: url(../img/gaston-index-2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center -10px;
@@ -69,22 +47,8 @@ a:hover {
     color: #00aff4;
     font-weight: bold; }
 
-.info-gaston {
-  padding: 50px 0px 30px 0px;
-  overflow: hidden; }
-  .info-gaston img {
-    border-radius: 50%;
-    float: left;
-    margin-right: 150px;
-    border-style: none; }
-  .info-gaston p {
-    font-size: 20px;
-    line-height: 1.5;
-    color: #414141; }
-
 .intro-acerca-de {
   width: 100%;
-  background-image: url(../img/gaston-index-5.jpg);
   background-size: cover;
   background-repeat: none;
   background-position: center;
@@ -92,17 +56,8 @@ a:hover {
   padding: 62px 50px;
   margin-top: 0px; }
 
-.texto-acerca-de {
-  width: 700px;
-  font-size: 20px;
-  line-height: 1.5;
-  font-weight: 400;
-  color: #5e5e5e;
-  padding: 30px 0px 30px 0px; }
-
 .intro-cursos {
   width: 100%;
-  background-image: url(../img/gaston-cursos.jpg);
   background-size: cover;
   background-repeat: none;
   background-position: center;
@@ -148,13 +103,37 @@ a:hover {
 
 .intro-contacto {
   width: 100%;
-  background-image: url(../img/gaston-contacto.jpg);
   background-size: cover;
   background-repeat: none;
   background-position: center;
   height: 250px;
   padding: 62px 50px;
   margin-top: 0px; }
+
+.intro-blog {
+  width: 100%;
+  background-size: cover;
+  background-repeat: none;
+  background-position: center;
+  height: 250px;
+  padding: 62px 50px;
+  margin-top: 0px; }
+
+.texto-acerca-de {
+  width: 700px;
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #5e5e5e;
+  padding: 30px 0px 30px 0px; }
+
+.info-gaston {
+  padding: 50px 0px 30px 0px;
+  overflow: hidden; }
+  .info-gaston p {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #414141; }
 
 .texto-contacto {
   width: 700px;
@@ -163,16 +142,6 @@ a:hover {
   font-weight: 400;
   color: #5e5e5e;
   padding: 30px 0px 30px 0px; }
-
-.intro-blog {
-  width: 100%;
-  background-image: url(../img/gaston-blog.jpg);
-  background-size: cover;
-  background-repeat: none;
-  background-position: center;
-  height: 250px;
-  padding: 62px 50px;
-  margin-top: 0px; }
 
 .blog1 {
   display: flex;
@@ -184,22 +153,70 @@ a:hover {
 
 .card {
   margin: 1em; }
-  .card img {
-    width: 443px;
-    height: 210px; }
 
 .estilo-formulario {
   margin-left: 250px; }
 
+/* Imagenes */
+img {
+  vertical-align: middle; }
+
+.navbar-brand img {
+  width: 230px; }
+
+.d-flex img {
+  padding: 0px 5px; }
+
+.intro {
+  background-image: url(../img/gaston-index-2.jpg); }
+
+.intro-acerca-de {
+  background-image: url(../img/gaston-index-5.jpg); }
+
+.intro-cursos {
+  background-image: url(../img/gaston-cursos.jpg); }
+
+.intro-contacto {
+  background-image: url(../img/gaston-contacto.jpg); }
+
+.intro-blog {
+  background-image: url(../img/gaston-blog.jpg); }
+
+.info-gaston img {
+  border-radius: 50%;
+  float: left;
+  margin-right: 150px;
+  border-style: none; }
+
+.card img {
+  width: 443px;
+  height: 210px; }
+
+.footerR img {
+  width: 74px;
+  margin-top: -30px; }
+
+/* Botones */
+.btn:hover {
+  background-color: #00aff4; }
+
+a:hover {
+  color: #ebebeb; }
+
+.btn-outline-info {
+  color: #00aff4;
+  border-color: #00aff4; }
+
+.dropdown-item:hover {
+  color: #00aff4; }
+
+/* Footer */
 .footerR {
   border-top: 1px solid #ebebeb;
   padding: 50px 50px; }
   .footerR a {
     padding-bottom: 5px; }
-  .footerR img {
-    width: 74px;
-    margin-top: -30px; }
 
 .copyright {
   font-size: 18px;
-  color: #414141; }
+  color: #5e5e5e; }

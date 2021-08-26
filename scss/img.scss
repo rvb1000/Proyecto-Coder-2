@@ -1,0 +1,50 @@
+/* Imagenes */
+
+img {
+    vertical-align: middle;
+}
+
+.navbar-brand img {
+    width: 230px;
+}
+
+.d-flex img {
+    padding: 0px 5px;
+}
+
+.intro {
+    background-image: url(../img/gaston-index-2.jpg);
+}
+
+.intro-acerca-de {
+    background-image: url(../img/gaston-index-5.jpg);
+}
+
+.intro-cursos {
+    background-image: url(../img/gaston-cursos.jpg);
+}
+
+.intro-contacto {
+    background-image: url(../img/gaston-contacto.jpg);
+}
+
+.intro-blog {
+    background-image: url(../img/gaston-blog.jpg);
+}
+
+.info-gaston img {
+        border-radius: 50%;
+        float: left;
+        margin-right: 150px;
+        border-style: none;
+}
+
+.card img {
+        width: 443px;
+        height: 210px;
+}
+
+.footerR img {
+    width: 74px;
+    margin-top: -30px;
+}
