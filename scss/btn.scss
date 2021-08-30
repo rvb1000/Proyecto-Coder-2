@@ -6,6 +6,7 @@ $gris: #5e5e5e;
 $gris2: #414141;
 $font: 'Roboto', sans-serif;
 
+
 .btn:hover {
     background-color: $celeste;
 }
@@ -19,6 +20,13 @@ a:hover {
     border-color: $celeste;
 }
 
-.dropdown-item:hover {
-    color: $celeste;
+.dropdown-item {
+    color: $gris;
 }
+
+.dropdown-item:hover {
+    background-color: $celeste;
+    color: $gris-claro;
+}
+
+

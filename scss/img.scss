@@ -1,9 +1,5 @@
 /* Imagenes */
 
-img {
-    vertical-align: middle;
-}
-
 .navbar-brand img {
     width: 230px;
 }
@@ -13,11 +9,11 @@ img {
 }
 
 .intro {
-    background-image: url(../img/gaston-index-2.jpg);
+    background-image: url(../img/g-index-n1.jpg);
 }
 
 .intro-acerca-de {
-    background-image: url(../img/gaston-index-5.jpg);
+    background-image: url(../img/g-sobremi-n1.jpg);
 }
 
 .intro-cursos {
@@ -25,11 +21,11 @@ img {
 }
 
 .intro-contacto {
-    background-image: url(../img/gaston-contacto.jpg);
+    background-image: url(../img/g-contacto-n1.jpg);
 }
 
 .intro-blog {
-    background-image: url(../img/gaston-blog.jpg);
+    background-image: url(../img/g-blog-n1.jpg);
 }
 
 .info-gaston img {
@@ -40,11 +36,10 @@ img {
 }
 
 .card img {
-        width: 443px;
-        height: 210px;
+        width: auto;
+        height: auto;
 }
 
 .footerR img {
-    width: 74px;
-    margin-top: -30px;
+    width: 60px;
 }

@@ -8,14 +8,10 @@ $font: 'Roboto', sans-serif;
 
 .footerR {
     border-top: 1px solid $gris-claro;
-    padding: 50px 50px;
+    height: 100px;
+    padding: 25px 25px;
 
     a {
         padding-bottom: 5px;
     }
-}
-
-.copyright {
-    font-size: 18px;
-    color: $gris;
 }

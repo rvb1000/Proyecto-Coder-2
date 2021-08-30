@@ -15,7 +15,6 @@ $font: 'Roboto', sans-serif;
 }
 
 body {
-    width: 980px;
     margin: auto;
 }
 
@@ -37,6 +36,10 @@ th {
     color: $gris;
 }
 
+.top {
+    border-bottom: 1px solid $gris-claro;
+}
+
 .nav-link {
     padding: 0 0 0 0;
 }
@@ -45,18 +48,75 @@ th {
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center -10px;
-    height: 415px;
-    margin-top: 0px;
+    background-position: center -75px;
+    height: 600px;
+}
+
+.intro-acerca-de {
+    width: 100%;
+    background-size: cover;
+    background-repeat: none;
+    background-position: center -412px;
+    height: 600px;
+}
+
+.intro-social {
+    width: 100%;
+    background-size: cover;
+    background-repeat: none;
+    background-position: center -50px;
+    height: 600px;
+}
+
+.intro-mk {
+    width: 100%;
+    background-size: cover;
+    background-repeat: none;
+    background-position: center -50px;
+    height: 600px;
+}
+
+.intro-google {
+    width: 100%;
+    background-size: cover;
+    background-repeat: none;
+    background-position: center -50px;
+    height: 600px;
+}
+
+.intro-fb {
+    width: 100%;
+    background-size: cover;
+    background-repeat: none;
+    background-position: center -50px;
+    height: 600px;
+}
+
+.intro-contacto {
+    width: 100%;
+    background-size: cover;
+    background-repeat: none;
+    background-position: center -70px;
+    height: 600px;
+}
+
+.intro-blog {
+    text-align: right;
+    width: 100%;
+    background-size: cover;
+    background-repeat: none;
+    background-position: center -150px;
+    height: 600px;
 }
 
 .texto-intro {
-    width: 600px;
-    font-size: 44px;
+    width: auto;
+    text-align: center;
+    font-size: 35px;
     line-height: 1.5;
     font-weight: 400;
     color: $gris;
-    padding: 100px 0px 30px 50px;
+    padding: 15px 450px 0px 450px;
 
 span {
     color: $celeste;
@@ -64,88 +124,9 @@ span {
 }
 }
 
-.intro-acerca-de {
-    width: 100%;
-    background-size: cover;
-    background-repeat: none;
-    background-position: center;
-    height: 250px;
-    padding: 62px 50px;
-    margin-top: 0px;
-}
-
-.intro-cursos {
-    width: 100%;
-    background-size: cover;
-    background-repeat: none;
-    background-position: center;
-    height: 250px;
-    padding: 62px 50px;
-    margin-top: 0px;
-}
-
-.intro-social {
-    width: 100%;
-    background-size: cover;
-    background-repeat: none;
-    background-position: center;
-    height: 250px;
-    padding: 62px 50px;
-    margin-top: 0px;
-}
-
-.intro-mk {
-    width: 100%;
-    background-size: cover;
-    background-repeat: none;
-    background-position: center;
-    height: 250px;
-    padding: 62px 50px;
-    margin-top: 0px;
-}
-
-.intro-google {
-    width: 100%;
-    background-size: cover;
-    background-repeat: none;
-    background-position: center;
-    height: 250px;
-    padding: 62px 50px;
-    margin-top: 0px;
-}
-
-.intro-fb {
-    width: 100%;
-    background-size: cover;
-    background-repeat: none;
-    background-position: center;
-    height: 250px;
-    padding: 62px 50px;
-    margin-top: 0px;
-}
-
-.intro-contacto {
-    width: 100%;
-    background-size: cover;
-    background-repeat: none;
-    background-position: center;
-    height: 250px;
-    padding: 62px 50px;
-    margin-top: 0px;
-}
-
-.intro-blog {
-    width: 100%;
-    background-size: cover;
-    background-repeat: none;
-    background-position: center;
-    height: 250px;
-    padding: 62px 50px;
-    margin-top: 0px;
-}
-
 .texto-acerca-de {
     width: 700px;
+    height: 500px;
     font-size: 20px;
     line-height: 1.5;
     font-weight: 400;
@@ -154,8 +135,9 @@ span {
 }
 
 .info-gaston {
-    padding: 50px 0px 30px 0px;
+    padding: 80px 80px 30px 0px;
     overflow: hidden;
+    height: 500px;
 
     p {
         font-size: 20px;
@@ -165,8 +147,7 @@ span {
 }
 
 .texto-contacto {
-    width: 700px;
-    font-size: 20px;
+    width: 100%;
     line-height: 1;
     font-weight: 400;
     color: $gris;
@@ -182,10 +163,16 @@ span {
     align-content: stretch;
 }
 
+.row {
+    padding: 50px 250px 0 250px;
+}
+
 .card {
     margin: 1em;
 }
 
 .estilo-formulario {
+    width: 100%;
     margin-left: 250px;
+    height: 500px;
 }
