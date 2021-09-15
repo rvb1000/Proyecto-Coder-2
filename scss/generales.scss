@@ -5,6 +5,7 @@ $gris-claro: #ebebeb;
 $gris: #5e5e5e;
 $gris2: #414141;
 $font: 'Roboto', sans-serif;
+$hintro: 43rem;
 
 * {
     font-family: $font;
@@ -12,6 +13,11 @@ $font: 'Roboto', sans-serif;
     padding: 0px;
     font-weight: 200;
     text-decoration: none;
+}
+
+.card {
+    margin: 5rem 5rem 5rem 5rem;
+    align-content: center;
 }
 
 body {
@@ -37,19 +43,15 @@ th {
 }
 
 .top {
-    border-bottom: 1px solid $gris-claro;
-}
-
-.nav-link {
-    padding: 0 0 0 0;
+    border-bottom: 0.1rem solid $gris-claro;
 }
 
 .intro {
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center -75px;
-    height: 600px;
+    background-position: center -100px;
+    height: $hintro;
 }
 
 .intro-acerca-de {
@@ -57,7 +59,7 @@ th {
     background-size: cover;
     background-repeat: none;
     background-position: center -412px;
-    height: 600px;
+    height: $hintro;
 }
 
 .intro-social {
@@ -65,7 +67,7 @@ th {
     background-size: cover;
     background-repeat: none;
     background-position: center -50px;
-    height: 600px;
+    height: $hintro;
 }
 
 .intro-mk {
@@ -73,7 +75,7 @@ th {
     background-size: cover;
     background-repeat: none;
     background-position: center -50px;
-    height: 600px;
+    height: $hintro;
 }
 
 .intro-google {
@@ -81,7 +83,7 @@ th {
     background-size: cover;
     background-repeat: none;
     background-position: center -50px;
-    height: 600px;
+    height: $hintro;
 }
 
 .intro-fb {
@@ -89,7 +91,7 @@ th {
     background-size: cover;
     background-repeat: none;
     background-position: center -50px;
-    height: 600px;
+    height: $hintro;
 }
 
 .intro-contacto {
@@ -97,26 +99,85 @@ th {
     background-size: cover;
     background-repeat: none;
     background-position: center -70px;
-    height: 600px;
+    height: $hintro;
 }
 
 .intro-blog {
-    text-align: right;
     width: 100%;
     background-size: cover;
     background-repeat: none;
     background-position: center -150px;
-    height: 600px;
+    height: $hintro;
+}
+
+
+$animationSpeed: 40s;
+
+// Animation
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-250px * 7))}
+}
+
+
+// Styling
+.slider {
+	background: white;
+	height: 15rem;
+	margin: auto;
+	overflow:hidden;
+	position: relative;
+	width: auto;
+	
+	&::before,
+	&::after {
+		content: "";
+		height: 100px;
+		position: absolute;
+		width: 200px;
+		z-index: 2;
+	}
+	
+	&::after {
+		right: 0;
+		top: 0;
+		transform: rotateZ(180deg);
+	}
+
+	&::before {
+		left: 0;
+		top: 0;
+	}
+	
+	.slide-track {
+		animation: scroll $animationSpeed linear infinite;
+		display: flex;
+		width: calc(250px * 14);
+	}
+	
+	.slide {
+		height: 100px;
+		width: 250px;
+	}
+}
+
+.slider h1 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.blog {
+    margin: 0rem 10rem;
 }
 
 .texto-intro {
     width: auto;
     text-align: center;
-    font-size: 35px;
+    font-size: 3rem;
     line-height: 1.5;
     font-weight: 400;
     color: $gris;
-    padding: 15px 450px 0px 450px;
+    padding: 1rem 10rem 1rem 10rem;
 
 span {
     color: $celeste;
@@ -125,25 +186,36 @@ span {
 }
 
 .texto-acerca-de {
-    width: 700px;
-    height: 500px;
+    width: 43rem;
+    height: 36rem;
     font-size: 20px;
     line-height: 1.5;
     font-weight: 400;
     color: $gris;
-    padding: 30px 0px 30px 0px;
+    padding: 3rem 2rem 2rem 2rem;
 }
 
 .info-gaston {
-    padding: 80px 80px 30px 0px;
+    padding: 5rem 3rem 5rem 10rem;
     overflow: hidden;
-    height: 500px;
+    height: 36rem;
+
+    h2 {
+        color: $celeste;
+        font-weight: bold;
+        margin-top: 1.5rem;
+    }
 
     p {
-        font-size: 20px;
+        padding: 3rem 8rem 0rem 0rem;
+        font-size: 1.5rem;
         line-height: 1.5;
         color: $gris2;
     }
+}
+
+.card {
+    width: 30rem;
 }
 
 .texto-contacto {
@@ -154,25 +226,12 @@ span {
     padding: 30px 0px 30px 0px;
 }
 
-.blog1 {
-    display: flex;
-    flex-direction: row;
-    justify-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: stretch;
-}
-
-.row {
-    padding: 50px 250px 0 250px;
-}
-
-.card {
-    margin: 1em;
-}
-
 .estilo-formulario {
     width: 100%;
     margin-left: 250px;
     height: 500px;
+}
+
+form {
+    margin: 5rem 10rem;
 }

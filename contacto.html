@@ -9,7 +9,8 @@
         <meta name="description" content="Me considero un apasionado de la comunicación digital y de las redes sociales. Mi misión es
         ayudar a todos los emprendedores a que puedan utilizar las diferentes plataformas
         publicitarias para cumplir sus objetivos.">
-        <meta name="keywords"  content="social, media, marketing, facebook, instagram, twitter, linkedin, tiktok, neuromarketing, Community, Manager, redes, redes sociales, ads, campañas publicitarias, publicidad, web, sem, seo">
+        <meta name="keywords"
+                content="social, media, marketing, facebook, instagram, twitter, linkedin, tiktok, neuromarketing, Community, Manager, redes, redes sociales, ads, campañas publicitarias, publicidad, web, sem, seo">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
                 integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
                 crossorigin="anonymous">
@@ -31,27 +32,44 @@
 </head>
 
 <body>
-        <nav class="navbar top sticky-top bg-light navbar-expand-sm navbar-light">
-                <div class="container-fluid">
-                        <a class="navbar-brand animate__animated animate__rubberBand" href="index.html">
-                                <img src="./img/logo-gaston-2.png" alt="" class="d-inline-block align-text-top"></a>
-                        <ul>
-                                <a class="btn btn-outline-info" href="index.html">INICIO</a>
-                                <a class="btn btn-outline-info" href="sobre-mi.html">SOBRE MI</a>
-                                <li class="btn btn-outline-info nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="cursos.html"
-                                                role="button" aria-haspopup="true" aria-expanded="false">CURSOS</a>
-                                        <div class="dropdown-menu">
-                                                <a class="dropdown-item" href="./curso-social.html">Social Media</a>
-                                                <a class="dropdown-item" href="./curso-mark.html">Marketing Digital</a>
-                                                <a class="dropdown-item" href="./curso-google.html">Google Ads</a>
+        <nav class="navbar sticky-top top navbar-expand-sm navbar-dark bg-dark">
+                <a class="navbar-brand" href="./index.html"><img src="./img/logo-gaston-2.png" alt="logo-gaston"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto ml-auto">
+                                <li class="nav-item">
+                                        <a class="nav-link" href="./index.html">INICIO</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="./sobre-mi.html">SOBRE MI</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="./cursos.html" id="navbarDropdown"
+                                                role="button" data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">
+                                                CURSOS
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                                 <a class="dropdown-item" href="./curso-fb.html">Facebook Ads</a>
+                                                <a class="dropdown-item" href="./curso-google.html">Google Ads</a>
+                                                <a class="dropdown-item" href="./curso-mark.html">Marketing Digital</a>
+                                                <a class="dropdown-item" href="./curso-social.html">Social Media</a>
                                         </div>
                                 </li>
-                                <a class="btn btn-outline-info" href="blog.html">BLOG</a>
-                                <a class="btn btn-outline-info" href="contacto.html">CONTACTO</a>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="./blog.html">BLOG</a>
+                                </li>
+                                <li class="nav-item active">
+                                        <a class="nav-link" href="./contacto.html">CONTACTO</a>
+                                </li>
                         </ul>
-                        <form class="d-flex">
+
+                        <form class="d-flex p-4">
                                 <div class="animate__animated animate__rubberBand">
                                         <a href="https://www.facebook.com/gastongennai"><img src="./img/facebook.png"
                                                         alt="fb"></a>
@@ -65,61 +83,57 @@
                                                         src="./img/linkedin.png" alt="lk"></a>
                                 </div>
                         </form>
+
                 </div>
         </nav>
         <section class="intro-contacto">
                 <div class="container-fluid">
                 </div>
         </section>
-        <article class="estilo-formulario">
-                <div class="container-fluid">
-                        <form action="" ; class="texto-contacto">
-                                <label for="Nombre">Nombre</label>
-                                <input type="Apellido" name="Nombre" required>
-                                <br>
-                                <br>
-                                <label for="Apellido">Apellido</label>
-                                <input type="Apellido" name="Apellido" required>
-                                <br>
-                                <br>
-                                <label for="email">Mail</label>
-                                <input type="email" name="email" placeholder="soycrack@gmail.com" required>
-                                <br>
-                                <br>
-                                <label for="Conocimientos">Tenes conocimientos?</label>
-                                <select name="Conocimientos" id="Conocimientos">
-                                        <option value="--"> </option>
-                                        <option value="Demasiado">Quiero mas</option>
-                                        <option value="Algo">Algo</option>
-                                        <option value="Muy poco">Muy poco</option>
-                                </select>
-                                <br>
-                                <br>
-                                <label for="box1">Decime lo que queres aprender</label>
-                                <br>
-                                <textarea rows="10" cols="40" name="box1" placeholder="Y algo mas..."></textarea>
-                                <br>
-                                <br>
-                                <div>
-                                        Te mando ofertas de mis cursos?
-                                        <input type="checkbox" name="acepta" value="1">
+
+        <form>
+                <div class="form-row m-3">
+                        <div class="col-md-6 mb-3">
+                                <label for="validationDefault01">Nombre</label>
+                                <input type="text" class="form-control" id="validationDefault01"
+                                        placeholder="Juan Carlos" required>
+                        </div>
+                        </div>
+                <div class="form-row m-3">
+                                <div class="col-md-6 mb-3">
+                                        <label for="validationDefault02">Apellido</label>
+                                        <input type="text" class="form-control" id="validationDefault02"
+                                                placeholder="Gomez" required>
                                 </div>
-                                <br>
-                                <input type="submit" class="btn btn-primary" value="Enviar">
-                                <input type="reset" class="btn btn-secondary" value="Me confundi">
-                        </form>
                 </div>
-        </article>
-        <nav class="navbar footerR bg-light navbar-expand-sm navbar-light">
-
-                <div class="container-fluid">
-
-                        <a class="navbar-brand" href="./index.html"> <img src="./img/favicon.png"></a>
-
-                        <span class="navbar-text">
-                                Todos los derechos reservados.
-                        </span>
+                <div class="form-row m-3">
+                        <div class="col-md-6 mb-3">
+                                <label for="email">Mail</label>
+                                <input type="email" class="form-control" placeholder="juancarlos@gmail.com"
+                                        id="validationDefault03" required>
+                        </div>
                 </div>
+                <div class="form-row m-3">
+                                <div class="col-md-3 mb-3">
+                                        <label for="validationDefault04">Tenes conocimientos?</label>
+                                        <select class="custom-select" id="validationDefault04" required>
+                                                <option selected disabled value="">Elije...</option>
+                                                <option value="Demasiado">Quiero saber mas!!</option>
+                                                <option value="Algo">Si, algo</option>
+                                                <option value="Muy poco">Muyyy poco</option>
+                                        </select>
+                                </div>
+                </div>
+                <button class="m-3 btn btn-primary" type="submit">Enviar</button>
+                <button class="m-3 btn btn-secondary" type="reset">Me confundi</button>
+
+        </form>
+
+        <nav class="d-flex p-5 bottom navbar-dark bg-dark">
+                <a class="footerR"><img src="./img/favicon.png" alt="logo-footer"></a>
+                <span class="d-flex p-4 flex-grow-1">
+                        by rvb1000
+                </span>
         </nav>
 </body>
 

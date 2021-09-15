@@ -9,7 +9,8 @@
         <meta name="description" content="Me considero un apasionado de la comunicación digital y de las redes sociales. Mi misión es
         ayudar a todos los emprendedores a que puedan utilizar las diferentes plataformas
         publicitarias para cumplir sus objetivos.">
-        <meta name="keywords"  content="social, media, marketing, facebook, instagram, twitter, linkedin, tiktok, neuromarketing, Community, Manager, redes, redes sociales, ads, campañas publicitarias, publicidad, web, sem, seo">
+        <meta name="keywords"
+                content="social, media, marketing, facebook, instagram, twitter, linkedin, tiktok, neuromarketing, Community, Manager, redes, redes sociales, ads, campañas publicitarias, publicidad, web, sem, seo">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
                 integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
                 crossorigin="anonymous">
@@ -31,27 +32,44 @@
 </head>
 
 <body>
-        <nav class="navbar top sticky-top bg-light navbar-expand-sm navbar-light">
-                <div class="container-fluid">
-                        <a class="navbar-brand animate__animated animate__rubberBand" href="index.html">
-                                <img src="./img/logo-gaston-2.png" alt="" class="d-inline-block align-text-top"></a>
-                        <ul>
-                                <a class="btn btn-outline-info" href="index.html">INICIO</a>
-                                <a class="btn btn-outline-info" href="sobre-mi.html">SOBRE MI</a>
-                                <li class="btn btn-outline-info nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="cursos.html"
-                                                role="button" aria-haspopup="true" aria-expanded="false">CURSOS</a>
-                                        <div class="dropdown-menu">
-                                                <a class="dropdown-item" href="./curso-social.html">Social Media</a>
-                                                <a class="dropdown-item" href="./curso-mark.html">Marketing Digital</a>
-                                                <a class="dropdown-item" href="./curso-google.html">Google Ads</a>
+        <nav class="navbar sticky-top top navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="./index.html"><img src="./img/logo-gaston-2.png" alt="logo-gaston"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto ml-auto">
+                                <li class="nav-item">
+                                        <a class="nav-link" href="./index.html">INICIO</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="./sobre-mi.html">SOBRE MI</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="./cursos.html"
+                                                id="navbarDropdown" role="button" data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
+                                                CURSOS
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                                 <a class="dropdown-item" href="./curso-fb.html">Facebook Ads</a>
+                                                <a class="dropdown-item" href="./curso-google.html">Google Ads</a>
+                                                <a class="dropdown-item" href="./curso-mark.html">Marketing Digital</a>
+                                                <a class="dropdown-item" href="./curso-social.html">Social Media</a>
                                         </div>
                                 </li>
-                                <a class="btn btn-outline-info" href="blog.html">BLOG</a>
-                                <a class="btn btn-outline-info" href="contacto.html">CONTACTO</a>
+                                <li class="nav-item active">
+                                        <a class="nav-link" href="./blog.html">BLOG</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="./contacto.html">CONTACTO</a>
+                                </li>
                         </ul>
-                        <form class="d-flex">
+
+                        <form class="d-flex p-4">
                                 <div class="animate__animated animate__rubberBand">
                                         <a href="https://www.facebook.com/gastongennai"><img src="./img/facebook.png"
                                                         alt="fb"></a>
@@ -65,96 +83,69 @@
                                                         src="./img/linkedin.png" alt="lk"></a>
                                 </div>
                         </form>
+
                 </div>
         </nav>
         <section class="intro-blog">
                 <div class="container-fluid">
                 </div>
-
         </section>
 
-        <section>
+        <article class="blog">
                 <div class="row row-cols-1 row-cols-md-2">
-                        <div class="col mb-4">
-                                <div class="card">
+                        <div class="cols-mb-4">
+                                <div class="card shadow bg-white rounded">
                                         <img src="./img/blog-1.jpg" class="card-img-top" alt="...">
                                         <div class="card-body">
                                                 <h5 class="card-title">¡Novedades en el algoritmo de Facebook!</h5>
-                                                <p class="card-text">¿Tus publicaciones no estaban teniendo las interacciones o
-                                                        el alcance que deseabas? Muchas personas vinculadas al mundo digital
-                                                        están mencionando que de a
-                                                        poco va a desaparecer el alcance orgánico de facebook, ya que sus
-                                                        posteos apenas
-                                                        logran cumplir las expectativas deseadas.</p>
+                                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, quos?</p>
                                                 <a href="#" class="btn btn-primary">Ver mas</a>
                                         </div>
                                 </div>
                         </div>
-                        <div class="col mb-4">
-                                <div class="card">
+                        <div class="cols-mb-4">
+                                <div class="card shadow bg-white rounded">
                                         <img src="./img/blog-2.jpg" class="card-img-top" alt="...">
                                         <div class="card-body">
-                                                <h5 class="card-title">Estuve junto a Mundo Pastel brindando una conferencia
+                                                <h5 class="card-title">Estuve junto a Mundo Pastel brindando una
+                                                        conferencia
                                                         sobre creatividad en eventos.</h5>
-                                                <p class="card-text">El miércoles 17 de abril fui invitado por Mundo Pastel, uno
-                                                        de los principales institutos gastronómicos de la ciudad de La Plata
-                                                        para brindar una
-                                                        charla informativa acerca de organización y creatividad en eventos.
-                                                        Estuvimos hablando
-                                                        sobre mi desempeño y labor en Trineo Creativo, Falsa Boda y el municipio
-                                                        de la ciudad de La
-                                                        Plata.</p>
+                                                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, ipsa!</p>
                                                 <a href="#" class="btn btn-primary">Ver mas</a>
                                         </div>
                                 </div>
                         </div>
-                        <div class="col mb-4">
-                                <div class="card">
+                        <div class="cols-mb-4">
+                                <div class="card shadow bg-white rounded">
                                         <img src="./img/blog-3.jpg" class="card-img-top" alt="...">
                                         <div class="card-body">
-                                                <h5 class="card-title">Acom: El primer encuentro del año en la ciudad de La
+                                                <h5 class="card-title">Acom: El primer encuentro del año en la ciudad de
+                                                        La
                                                         Plata.</h5>
-                                                <p class="card-text"> El viernes 22 de marzo en el Pasaje Dardo Rocha realizamos
-                                                        el primer encuentro de gestores de redes sociales con la Asociación de
-                                                        Community Managers de la ciudad de
-                                                        La Plata (ACOM).
-                                                        Durante el encuentro hubo 3 exposiciones sobre las cuales debatimos en
-                                                        cada caso.</p>
+                                                <p class="card-text"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, laborum!</p>
                                                 <a href="#" class="btn btn-primary">Ver mas</a>
                                         </div>
                                 </div>
                         </div>
-                        <div class="col mb-4">
-                                <div class="card">
+                        <div class="cols-mb-4">
+                                <div class="card shadow bg-white rounded">
                                         <img src="./img/blog-4.jpg" class="card-img-top" alt="...">
                                         <div class="card-body">
                                                 <h5 class="card-title">Estudiantes y Gimnasia contaron cómo es la
                                                         “pasión por las redes sociales”</h5>
-                                                <p class="card-text">Los dos clubes más importantes de la ciudad de La
-                                                        Plata nos contaron cómo gestionan sus redes sociales y qué significa
-                                                        trabajar junto a las pasiones de los
-                                                        hinchas. El evento contó con la presencia de Ariel Ibarra, Social Media
-                                                        Manager del Club
-                                                        Estudiantes de La Plata, y Norberto Gobbi, Gerente de Marketing del Club
-                                                        de Gimnasia y
-                                                        Esgrima de La Plata.</p>
+                                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, veniam.</p>
                                                 <a href="#" class="btn btn-primary">Ver mas</a>
                                         </div>
                                 </div>
                         </div>
                 </div>
-        </section>
-
-        <nav class="navbar footerR bg-light navbar-expand-sm navbar-light">
-
-                <div class="container-fluid">
-
-                        <a class="navbar-brand" href="./index.html"> <img src="./img/favicon.png"></a>
-
-                        <span class="navbar-text">
-                                Todos los derechos reservados.
-                        </span>
-                </div>
+        </article>
+        
+        <nav class="d-flex p-5 bottom navbar-dark bg-dark">
+                <a class="footerR"><img src="./img/favicon.png" alt="logo-footer"></a>
+                <span class="d-flex p-4 flex-grow-1">
+                        by rvb1000
+                </span>
         </nav>
 </body>
 

@@ -1,7 +1,7 @@
 /* Imagenes */
 
 .navbar-brand img {
-    width: 230px;
+    width: 15rem;
 }
 
 .d-flex img {
@@ -33,6 +33,7 @@
         float: left;
         margin-right: 150px;
         border-style: none;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .card img {
@@ -41,5 +42,5 @@
 }
 
 .footerR img {
-    width: 60px;
+    width: 5rem;
 }

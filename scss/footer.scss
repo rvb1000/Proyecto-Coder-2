@@ -6,12 +6,14 @@ $gris: #5e5e5e;
 $gris2: #414141;
 $font: 'Roboto', sans-serif;
 
-.footerR {
+.bottom {
     border-top: 1px solid $gris-claro;
-    height: 100px;
-    padding: 25px 25px;
+    height: 7rem;
+}
 
-    a {
-        padding-bottom: 5px;
-    }
+.d-flex {
+    align-items: center;
+    justify-content: end;
+    color: $gris-claro;
+    margin: auto;
 }

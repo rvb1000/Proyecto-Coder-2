@@ -6,6 +6,10 @@
   font-weight: 200;
   text-decoration: none; }
 
+.card {
+  margin: 5rem 5rem 5rem 5rem;
+  align-content: center; }
+
 body {
   margin: auto; }
 
@@ -25,97 +29,142 @@ th {
   color: #5e5e5e; }
 
 .top {
-  border-bottom: 1px solid #ebebeb; }
-
-.nav-link {
-  padding: 0 0 0 0; }
+  border-bottom: 0.1rem solid #ebebeb; }
 
 .intro {
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center -75px;
-  height: 600px; }
+  background-position: center -100px;
+  height: 43rem; }
 
 .intro-acerca-de {
   width: 100%;
   background-size: cover;
   background-repeat: none;
   background-position: center -412px;
-  height: 600px; }
+  height: 43rem; }
 
 .intro-social {
   width: 100%;
   background-size: cover;
   background-repeat: none;
   background-position: center -50px;
-  height: 600px; }
+  height: 43rem; }
 
 .intro-mk {
   width: 100%;
   background-size: cover;
   background-repeat: none;
   background-position: center -50px;
-  height: 600px; }
+  height: 43rem; }
 
 .intro-google {
   width: 100%;
   background-size: cover;
   background-repeat: none;
   background-position: center -50px;
-  height: 600px; }
+  height: 43rem; }
 
 .intro-fb {
   width: 100%;
   background-size: cover;
   background-repeat: none;
   background-position: center -50px;
-  height: 600px; }
+  height: 43rem; }
 
 .intro-contacto {
   width: 100%;
   background-size: cover;
   background-repeat: none;
   background-position: center -70px;
-  height: 600px; }
+  height: 43rem; }
 
 .intro-blog {
-  text-align: right;
   width: 100%;
   background-size: cover;
   background-repeat: none;
   background-position: center -150px;
-  height: 600px; }
+  height: 43rem; }
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0); }
+  100% {
+    transform: translateX(calc(-250px * 7)); } }
+
+.slider {
+  background: white;
+  height: 15rem;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: auto; }
+  .slider::before, .slider::after {
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 200px;
+    z-index: 2; }
+  .slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg); }
+  .slider::before {
+    left: 0;
+    top: 0; }
+  .slider .slide-track {
+    animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(250px * 14); }
+  .slider .slide {
+    height: 100px;
+    width: 250px; }
+
+.slider h1 {
+  text-align: center;
+  font-size: 2rem; }
+
+.blog {
+  margin: 0rem 10rem; }
 
 .texto-intro {
   width: auto;
   text-align: center;
-  font-size: 35px;
+  font-size: 3rem;
   line-height: 1.5;
   font-weight: 400;
   color: #5e5e5e;
-  padding: 15px 450px 0px 450px; }
+  padding: 1rem 10rem 1rem 10rem; }
   .texto-intro span {
     color: #00aff4;
     font-weight: bold; }
 
 .texto-acerca-de {
-  width: 700px;
-  height: 500px;
+  width: 43rem;
+  height: 36rem;
   font-size: 20px;
   line-height: 1.5;
   font-weight: 400;
   color: #5e5e5e;
-  padding: 30px 0px 30px 0px; }
+  padding: 3rem 2rem 2rem 2rem; }
 
 .info-gaston {
-  padding: 80px 80px 30px 0px;
+  padding: 5rem 3rem 5rem 10rem;
   overflow: hidden;
-  height: 500px; }
+  height: 36rem; }
+  .info-gaston h2 {
+    color: #00aff4;
+    font-weight: bold;
+    margin-top: 1.5rem; }
   .info-gaston p {
-    font-size: 20px;
+    padding: 3rem 8rem 0rem 0rem;
+    font-size: 1.5rem;
     line-height: 1.5;
     color: #414141; }
+
+.card {
+  width: 30rem; }
 
 .texto-contacto {
   width: 100%;
@@ -124,28 +173,17 @@ th {
   color: #5e5e5e;
   padding: 30px 0px 30px 0px; }
 
-.blog1 {
-  display: flex;
-  flex-direction: row;
-  justify-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: stretch; }
-
-.row {
-  padding: 50px 250px 0 250px; }
-
-.card {
-  margin: 1em; }
-
 .estilo-formulario {
   width: 100%;
   margin-left: 250px;
   height: 500px; }
 
+form {
+  margin: 5rem 10rem; }
+
 /* Imagenes */
 .navbar-brand img {
-  width: 230px; }
+  width: 15rem; }
 
 .d-flex img {
   padding: 0px 5px; }
@@ -169,26 +207,17 @@ th {
   border-radius: 50%;
   float: left;
   margin-right: 150px;
-  border-style: none; }
+  border-style: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
 .card img {
   width: auto;
   height: auto; }
 
 .footerR img {
-  width: 60px; }
+  width: 5rem; }
 
 /* Botones */
-.btn:hover {
-  background-color: #00aff4; }
-
-a:hover {
-  color: #ebebeb; }
-
-.btn-outline-info {
-  color: #00aff4;
-  border-color: #00aff4; }
-
 .dropdown-item {
   color: #5e5e5e; }
 
@@ -197,9 +226,437 @@ a:hover {
   color: #ebebeb; }
 
 /* Footer */
-.footerR {
+.bottom {
   border-top: 1px solid #ebebeb;
-  height: 100px;
-  padding: 25px 25px; }
-  .footerR a {
-    padding-bottom: 5px; }
+  height: 7rem; }
+
+.d-flex {
+  align-items: center;
+  justify-content: end;
+  color: #ebebeb;
+  margin: auto; }
+
+/* MOBILE */
+@media only screen and (max-width: 980px) {
+  /* INICIO */
+  .navbar-brand img {
+    width: 15rem; }
+  .intro {
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 40rem; }
+  .texto-intro {
+    max-width: auto;
+    text-align: center;
+    font-size: 2.2rem;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #5e5e5e; }
+    .texto-intro span {
+      color: #00aff4;
+      font-weight: bold; }
+  .info-gaston {
+    padding: 2rem 1rem 1rem 1rem;
+    overflow: hidden;
+    height: 30rem; }
+    .info-gaston img {
+      max-width: 100%;
+      border-radius: 50%;
+      border-style: none;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+    .info-gaston h2 {
+      text-align: center;
+      padding-top: 5rem; }
+    .info-gaston p {
+      text-align: center;
+      padding: 0rem 1rem 0rem 1rem;
+      font-size: 1rem;
+      line-height: 1.2rem;
+      color: #414141; }
+  /* SOBRE MI */
+  .intro-acerca-de {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 46rem; }
+  .texto-acerca-de {
+    width: auto;
+    height: auto;
+    font-size: 20px; }
+  /* BLOG */
+  .intro-blog {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 46rem; }
+  .blog {
+    margin: 2rem 2rem; }
+  .row-cols-1 {
+    margin: 2rem 0rem;
+    padding: 1rem 0rem; }
+  .card {
+    width: 25rem;
+    margin: 2rem 0rem 2rem 0rem;
+    align-content: center; }
+  /* CONTACTO */
+  .intro-contacto {
+    width: 100%;
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+    height: 46rem; }
+  .estilo-formulario {
+    width: 100%;
+    margin-left: 0px; }
+  /* FOOTER */
+  .footerR {
+    height: 7rem;
+    padding: 1rem 1rem; }
+    .footerR a {
+      padding-bottom: 5px; }
+    .footerR img {
+      width: 5rem; }
+    .footerR span {
+      font-size: 0.8rem; } }
+
+@media only screen and (max-width: 769px) {
+  /* INICIO */
+  .navbar-brand img {
+    width: 15rem; }
+  .intro {
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 40rem; }
+  .texto-intro {
+    max-width: auto;
+    text-align: center;
+    font-size: 2.2rem;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #5e5e5e; }
+    .texto-intro span {
+      color: #00aff4;
+      font-weight: bold; }
+  .info-gaston {
+    padding: 2rem 1rem 1rem 1rem;
+    overflow: hidden;
+    height: 30rem; }
+    .info-gaston img {
+      max-width: 100%;
+      border-radius: 50%;
+      border-style: none;
+      margin-right: 2rem;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+    .info-gaston h2 {
+      text-align: center;
+      padding-top: 5rem; }
+    .info-gaston p {
+      text-align: center;
+      padding: 0rem 1rem 0rem 1rem;
+      font-size: 1rem;
+      line-height: 1rem;
+      color: #414141; }
+  /* SOBRE MI */
+  .intro-acerca-de {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 46rem; }
+  .texto-acerca-de {
+    width: auto;
+    height: auto;
+    font-size: 20px; }
+  /* BLOG */
+  .intro-blog {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 46rem; }
+  .blog {
+    margin: 2rem 2rem; }
+  .row-cols-1 {
+    margin: 2rem 0rem;
+    padding: 1rem 0rem; }
+  .card {
+    width: 25rem;
+    margin: 2rem 0rem 2rem 0rem;
+    align-content: center; }
+  /* CONTACTO */
+  .intro-contacto {
+    width: 100%;
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+    height: 46rem; }
+  .estilo-formulario {
+    width: 100%;
+    margin-left: 0px; }
+  /* FOOTER */
+  .footerR {
+    height: 7rem;
+    padding: 1rem 1rem; }
+    .footerR a {
+      padding-bottom: 5px; }
+    .footerR img {
+      width: 5rem; }
+    .footerR span {
+      font-size: 0.8rem; } }
+
+@media only screen and (max-width: 480px) {
+  /* INICIO */
+  .navbar-brand img {
+    width: 10rem; }
+  .intro {
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 1px;
+    height: 40rem; }
+  .texto-intro {
+    max-width: auto;
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #5e5e5e;
+    padding: 2rem 1rem 0.5rem 1rem; }
+    .texto-intro span {
+      color: #00aff4;
+      font-weight: bold; }
+  .info-gaston {
+    padding: 2rem 1rem 1rem 1rem;
+    overflow: hidden;
+    height: 40rem; }
+    .info-gaston img {
+      max-width: 100%;
+      border-radius: 50%;
+      border-style: none;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+    .info-gaston h2 {
+      text-align: center;
+      padding-top: 22rem; }
+    .info-gaston p {
+      text-align: center;
+      padding: 0rem 1rem 0rem 1rem;
+      font-size: 1rem;
+      line-height: 1.2rem;
+      color: #414141; }
+  /* SOBRE MI */
+  .intro-acerca-de {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 46rem; }
+  .texto-acerca-de {
+    width: auto;
+    height: auto;
+    font-size: 20px; }
+  /* BLOG */
+  .intro-blog {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 46rem; }
+  .blog {
+    margin: 2rem 2rem; }
+  .row-cols-1 {
+    margin: 2rem 0rem;
+    padding: 1rem 0rem; }
+  .card {
+    width: 20rem;
+    margin: 2rem 0rem 2rem 0rem;
+    align-content: center; }
+  /* CONTACTO */
+  .intro-contacto {
+    width: 100%;
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+    height: 46rem; }
+  .estilo-formulario {
+    width: 100%;
+    margin-left: 0px; }
+  /* FOOTER */
+  .footerR {
+    height: 7rem;
+    padding: 1rem 1rem; }
+    .footerR a {
+      padding-bottom: 5px; }
+    .footerR img {
+      width: 5rem; }
+    .footerR span {
+      font-size: 0.8rem; } }
+
+@media only screen and (max-width: 375px) {
+  /* INICIO */
+  .navbar-brand img {
+    width: 10rem; }
+  .intro {
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 1px;
+    height: 40rem; }
+  .texto-intro {
+    max-width: auto;
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #5e5e5e;
+    padding: 2rem 1rem 0.5rem 1rem; }
+    .texto-intro span {
+      color: #00aff4;
+      font-weight: bold; }
+  .info-gaston {
+    padding: 2rem 1rem 1rem 1rem;
+    overflow: hidden;
+    height: 40rem; }
+    .info-gaston img {
+      max-width: 100%;
+      border-radius: 50%;
+      border-style: none;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+    .info-gaston h2 {
+      text-align: center;
+      padding-top: 22rem; }
+    .info-gaston p {
+      text-align: center;
+      padding: 0rem 1rem 0rem 1rem;
+      font-size: 1rem;
+      line-height: 1.2rem;
+      color: #414141; }
+  /* SOBRE MI */
+  .intro-acerca-de {
+    width: 100%;
+    background-size: cover;
+    background-position: center -6rem;
+    height: 15rem; }
+  .texto-acerca-de {
+    width: auto;
+    height: auto;
+    font-size: 20px; }
+  /* BLOG */
+  .intro-blog {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 46rem; }
+  .blog {
+    margin: 2rem 2rem; }
+  .row-cols-1 {
+    margin: 2rem 0rem;
+    padding: 1rem 0rem; }
+  .card {
+    width: 15rem;
+    margin: 2rem 0rem 2rem 0rem;
+    align-content: center; }
+  /* CONTACTO */
+  .intro-contacto {
+    width: 100%;
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+    height: 46rem; }
+  .estilo-formulario {
+    width: 100%;
+    margin-left: 0px; }
+  /* FOOTER */
+  .footerR {
+    height: 7rem;
+    padding: 1rem 1rem; }
+    .footerR a {
+      padding-bottom: 5px; }
+    .footerR img {
+      width: 5rem; }
+    .footerR span {
+      font-size: 0.8rem; } }
+
+@media only screen and (max-width: 320px) {
+  /* INICIO */
+  .navbar-brand img {
+    width: 10rem; }
+  .intro {
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 1px;
+    height: 40rem; }
+  .texto-intro {
+    max-width: auto;
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #5e5e5e;
+    padding: 2rem 1rem 0.5rem 1rem; }
+    .texto-intro span {
+      color: #00aff4;
+      font-weight: bold; }
+  .info-gaston {
+    padding: 2rem 1rem 1rem 1rem;
+    overflow: hidden;
+    height: 40rem; }
+    .info-gaston img {
+      max-width: 100%;
+      border-radius: 50%;
+      border-style: none;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+    .info-gaston h2 {
+      text-align: center;
+      padding-top: 22rem; }
+    .info-gaston p {
+      text-align: center;
+      padding: 0rem 1rem 0rem 1rem;
+      font-size: 1rem;
+      line-height: 1.2rem;
+      color: #414141; }
+  /* SOBRE MI */
+  .intro-acerca-de {
+    width: 100%;
+    background-size: cover;
+    background-position: center -6rem;
+    height: 15rem; }
+  .texto-acerca-de {
+    width: auto;
+    height: auto;
+    font-size: 20px; }
+  /* BLOG */
+  .intro-blog {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 46rem; }
+  .blog {
+    margin: 2rem 2rem; }
+  .row-cols-1 {
+    margin: 2rem 0rem;
+    padding: 1rem 0rem; }
+  .card {
+    width: 10rem;
+    margin: 2rem 0rem 2rem 0rem;
+    align-content: center; }
+  /* CONTACTO */
+  .intro-contacto {
+    width: 100%;
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+    height: 46rem; }
+  .estilo-formulario {
+    width: 100%;
+    margin-left: 0px; }
+  /* FOOTER */
+  .footerR {
+    height: 7rem;
+    padding: 1rem 1rem; }
+    .footerR a {
+      padding-bottom: 5px; }
+    .footerR img {
+      width: 5rem; }
+    .footerR span {
+      font-size: 0.8rem; } }

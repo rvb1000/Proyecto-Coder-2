@@ -1,0 +1,672 @@
+/* MOBILE */
+
+$celeste: #00aff4;
+$gris-claro: #ebebeb;
+$gris: #5e5e5e;
+$gris2: #414141;
+$font: 'Roboto', sans-serif;
+
+
+@media only screen and (max-width: 980px) { 
+
+    /* INICIO */
+
+    .navbar-brand img {
+        width: 15rem;
+    }
+
+    .intro {
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 40rem;
+    }
+
+    .texto-intro {
+        max-width: auto;
+        text-align: center;
+        font-size: 2.2rem;
+        line-height: 1.5;
+        font-weight: 400;
+        color: $gris;
+    
+    span {
+        color: $celeste;
+        font-weight: bold;    
+    }
+    }
+
+    .info-gaston {
+        padding: 2rem 1rem 1rem 1rem;
+        overflow: hidden;
+        height: 30rem;
+    
+        img {
+            max-width: 100%;
+            border-radius: 50%;
+            border-style: none;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        h2 {
+            text-align: center;
+            padding-top: 5rem;
+        }
+    
+        p {
+            text-align: center;
+            padding: 0rem 1rem 0rem 1rem;
+            font-size: 1rem;
+            line-height: 1.2rem;
+            color: $gris2;
+        }
+    }
+
+    /* SOBRE MI */
+
+    .intro-acerca-de {
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        height: 46rem;
+    }
+
+    .texto-acerca-de {
+        width: auto;
+        height: auto;
+        font-size: 20px;
+    }
+
+
+/* BLOG */
+
+.intro-blog {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 46rem;
+}
+
+.blog {
+    margin: 2rem 2rem;
+}
+
+.row-cols-1 {
+    margin: 2rem 0rem;
+    padding: 1rem 0rem;
+}
+
+.card {
+    width: 25rem;
+    margin: 2rem 0rem 2rem 0rem;
+    align-content: center;
+}
+
+/* CONTACTO */
+
+.intro-contacto {
+    width: 100%;
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+    height: 46rem;
+}
+
+.estilo-formulario {
+    width: 100%;
+    margin-left: 0px;
+}
+
+/* FOOTER */
+
+.footerR {
+    height: 7rem;
+    padding: 1rem 1rem;
+
+    a {
+        padding-bottom: 5px;
+    }
+    img {
+        width: 5rem;
+    }
+    span {
+        font-size: 0.8rem;
+    }
+}
+
+}
+
+
+
+@media only screen and (max-width: 769px) { 
+
+    /* INICIO */
+
+    .navbar-brand img {
+        width: 15rem;
+    }
+
+    .intro {
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 40rem;
+    }
+
+    .texto-intro {
+        max-width: auto;
+        text-align: center;
+        font-size: 2.2rem;
+        line-height: 1.5;
+        font-weight: 400;
+        color: $gris;
+    
+    span {
+        color: $celeste;
+        font-weight: bold;    
+    }
+    }
+
+    .info-gaston {
+        padding: 2rem 1rem 1rem 1rem;
+        overflow: hidden;
+        height: 30rem;
+    
+        img {
+            max-width: 100%;
+            border-radius: 50%;
+            border-style: none;
+            margin-right: 2rem;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        h2 {
+            text-align: center;
+            padding-top: 5rem;
+        }
+    
+        p {
+            text-align: center;
+            padding: 0rem 1rem 0rem 1rem;
+            font-size: 1rem;
+            line-height: 1rem;
+            color: $gris2;
+        }
+    }
+
+    /* SOBRE MI */
+
+    .intro-acerca-de {
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        height: 46rem;
+    }
+
+    .texto-acerca-de {
+        width: auto;
+        height: auto;
+        font-size: 20px;
+    }
+
+
+/* BLOG */
+
+.intro-blog {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 46rem;
+}
+
+.blog {
+    margin: 2rem 2rem;
+}
+
+.row-cols-1 {
+    margin: 2rem 0rem;
+    padding: 1rem 0rem;
+}
+
+.card {
+    width: 25rem;
+    margin: 2rem 0rem 2rem 0rem;
+    align-content: center;
+}
+
+/* CONTACTO */
+
+.intro-contacto {
+    width: 100%;
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+    height: 46rem;
+}
+
+.estilo-formulario {
+    width: 100%;
+    margin-left: 0px;
+}
+
+/* FOOTER */
+
+.footerR {
+    height: 7rem;
+    padding: 1rem 1rem;
+
+    a {
+        padding-bottom: 5px;
+    }
+    img {
+        width: 5rem;
+    }
+    span {
+        font-size: 0.8rem;
+    }
+}
+
+}
+
+
+
+@media only screen and (max-width: 480px) { 
+
+    /* INICIO */
+
+    .navbar-brand img {
+        width: 10rem;
+    }
+
+    .intro {
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center 1px;
+        height: 40rem;
+    }
+
+    .texto-intro {
+        max-width: auto;
+        text-align: center;
+        font-size: 1.6rem;
+        line-height: 1.5;
+        font-weight: 400;
+        color: $gris;
+        padding: 2rem 1rem 0.5rem 1rem;
+    
+    span {
+        color: $celeste;
+        font-weight: bold;    
+    }
+    }
+
+    .info-gaston {
+        padding: 2rem 1rem 1rem 1rem;
+        overflow: hidden;
+        height: 40rem;
+    
+        img {
+            max-width: 100%;
+            border-radius: 50%;
+            border-style: none;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        h2 {
+            text-align: center;
+            padding-top: 22rem;
+        }
+    
+        p {
+            text-align: center;
+            padding: 0rem 1rem 0rem 1rem;
+            font-size: 1rem;
+            line-height: 1.2rem;
+            color: $gris2;
+        }
+    }
+
+    /* SOBRE MI */
+
+    .intro-acerca-de {
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        height: 46rem;
+    }
+
+    .texto-acerca-de {
+        width: auto;
+        height: auto;
+        font-size: 20px;
+    }
+
+
+/* BLOG */
+
+.intro-blog {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 46rem;
+}
+
+.blog {
+    margin: 2rem 2rem;
+}
+
+.row-cols-1 {
+    margin: 2rem 0rem;
+    padding: 1rem 0rem;
+}
+
+.card {
+    width: 20rem;
+    margin: 2rem 0rem 2rem 0rem;
+    align-content: center;
+}
+
+/* CONTACTO */
+
+.intro-contacto {
+    width: 100%;
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+    height: 46rem;
+}
+
+.estilo-formulario {
+    width: 100%;
+    margin-left: 0px;
+}
+
+/* FOOTER */
+
+.footerR {
+    height: 7rem;
+    padding: 1rem 1rem;
+
+    a {
+        padding-bottom: 5px;
+    }
+    img {
+        width: 5rem;
+    }
+    span {
+        font-size: 0.8rem;
+    }
+}
+
+}
+
+
+
+
+@media only screen and (max-width: 375px) { 
+
+    /* INICIO */
+
+    .navbar-brand img {
+        width: 10rem;
+    }
+
+    .intro {
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center 1px;
+        height: 40rem;
+    }
+
+    .texto-intro {
+        max-width: auto;
+        text-align: center;
+        font-size: 1.6rem;
+        line-height: 1.5;
+        font-weight: 400;
+        color: $gris;
+        padding: 2rem 1rem 0.5rem 1rem;
+    
+    span {
+        color: $celeste;
+        font-weight: bold;    
+    }
+    }
+
+    .info-gaston {
+        padding: 2rem 1rem 1rem 1rem;
+        overflow: hidden;
+        height: 40rem;
+    
+        img {
+            max-width: 100%;
+            border-radius: 50%;
+            border-style: none;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        h2 {
+            text-align: center;
+            padding-top: 22rem;
+        }
+    
+        p {
+            text-align: center;
+            padding: 0rem 1rem 0rem 1rem;
+            font-size: 1rem;
+            line-height: 1.2rem;
+            color: $gris2;
+        }
+    }
+
+    /* SOBRE MI */
+
+    .intro-acerca-de {
+        width: 100%;
+        background-size: cover;
+        background-position: center -6rem;
+        height: 15rem;
+    }
+
+    .texto-acerca-de {
+        width: auto;
+        height: auto;
+        font-size: 20px;
+    }
+
+
+/* BLOG */
+
+.intro-blog {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 46rem;
+}
+
+.blog {
+    margin: 2rem 2rem;
+}
+
+.row-cols-1 {
+    margin: 2rem 0rem;
+    padding: 1rem 0rem;
+}
+
+.card {
+    width: 15rem;
+    margin: 2rem 0rem 2rem 0rem;
+    align-content: center;
+}
+
+/* CONTACTO */
+
+.intro-contacto {
+    width: 100%;
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+    height: 46rem;
+}
+
+.estilo-formulario {
+    width: 100%;
+    margin-left: 0px;
+}
+
+/* FOOTER */
+
+.footerR {
+    height: 7rem;
+    padding: 1rem 1rem;
+
+    a {
+        padding-bottom: 5px;
+    }
+    img {
+        width: 5rem;
+    }
+    span {
+        font-size: 0.8rem;
+    }
+}
+
+}
+
+
+
+
+@media only screen and (max-width: 320px) { 
+
+    /* INICIO */
+
+    .navbar-brand img {
+        width: 10rem;
+    }
+
+    .intro {
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center 1px;
+        height: 40rem;
+    }
+
+    .texto-intro {
+        max-width: auto;
+        text-align: center;
+        font-size: 1.6rem;
+        line-height: 1.5;
+        font-weight: 400;
+        color: $gris;
+        padding: 2rem 1rem 0.5rem 1rem;
+    
+    span {
+        color: $celeste;
+        font-weight: bold;    
+    }
+    }
+
+    .info-gaston {
+        padding: 2rem 1rem 1rem 1rem;
+        overflow: hidden;
+        height: 40rem;
+    
+        img {
+            max-width: 100%;
+            border-radius: 50%;
+            border-style: none;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        h2 {
+            text-align: center;
+            padding-top: 22rem;
+        }
+    
+        p {
+            text-align: center;
+            padding: 0rem 1rem 0rem 1rem;
+            font-size: 1rem;
+            line-height: 1.2rem;
+            color: $gris2;
+        }
+    }
+
+    /* SOBRE MI */
+
+    .intro-acerca-de {
+        width: 100%;
+        background-size: cover;
+        background-position: center -6rem;
+        height: 15rem;
+    }
+
+    .texto-acerca-de {
+        width: auto;
+        height: auto;
+        font-size: 20px;
+    }
+
+
+/* BLOG */
+
+.intro-blog {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 46rem;
+}
+
+.blog {
+    margin: 2rem 2rem;
+}
+
+.row-cols-1 {
+    margin: 2rem 0rem;
+    padding: 1rem 0rem;
+}
+
+.card {
+    width: 10rem;
+    margin: 2rem 0rem 2rem 0rem;
+    align-content: center;
+}
+
+/* CONTACTO */
+
+.intro-contacto {
+    width: 100%;
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+    height: 46rem;
+}
+
+.estilo-formulario {
+    width: 100%;
+    margin-left: 0px;
+}
+
+/* FOOTER */
+
+.footerR {
+    height: 7rem;
+    padding: 1rem 1rem;
+
+    a {
+        padding-bottom: 5px;
+    }
+    img {
+        width: 5rem;
+    }
+    span {
+        font-size: 0.8rem;
+    }
+}
+
+}
