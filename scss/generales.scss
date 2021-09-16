@@ -198,24 +198,25 @@ span {
 .info-gaston {
     padding: 5rem 3rem 5rem 10rem;
     overflow: hidden;
-    height: 36rem;
+    height: 15rem;
 
     h2 {
         color: $celeste;
         font-weight: bold;
         margin-top: 1.5rem;
+        padding: 3rem 3rem 1rem 30rem;
     }
 
     p {
-        padding: 3rem 8rem 0rem 0rem;
-        font-size: 1.5rem;
+        padding: 0rem 6rem 0rem 35rem;
+        font-size: 1.3rem;
         line-height: 1.5;
         color: $gris2;
     }
 }
 
 .card {
-    width: 30rem;
+    width: 25rem;
 }
 
 .texto-contacto {
